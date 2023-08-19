@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "bbdf4e1d-9ef9-40e5-8c09-bb22d4251940",
+		"name": "SalaryManagment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9619193"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "GET Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/salary_managment/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"salary_managment",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Usuarios por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/salary_managment/usuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"salary_managment",
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE Usuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"cpf\": 45969991805,\r\n        \"nome\": \"teste2\",\r\n        \"email\": \"teste2@teste.com\",\r\n        \"password\": \"@abc12345\",\r\n        \"idade\": \"18\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/salary_managment/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"salary_managment",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar Usuarios",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"cpf\": 45969991805,\r\n        \"nome\": \"teste23\",\r\n        \"email\": \"teste2@teste.com\",\r\n        \"password\": \"@abc12345\",\r\n        \"idade\": \"181\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/salary_managment/usuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"salary_managment",
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar Usuarios Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"cpf\": 45969991805,\r\n        \"nome\": \"teste23\",\r\n        \"email\": \"teste2@teste.com\",\r\n        \"password\": \"@abc12345\",\r\n        \"idade\": \"181\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/salary_managment/usuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"salary_managment",
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Salario",
+			"item": [
+				{
+					"name": "GET Salario",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJub21lIjoiRmFicmljaW8iLCJzdWIiOiJ0ZXN0ZTJAdGVzdGUuY29tIiwiaWF0IjoxNjkyNDU0MjgyLCJleHAiOjE2OTI0NTQ3ODJ9.VEtb4bHIoHZz1Q8C2OiUqwra1d1qYUlfxo2s1p3nJho",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/salary_managment/salario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"salary_managment",
+								"salario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Salario por id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJub21lIjoiRmFicmljaW8iLCJzdWIiOiJ0ZXN0ZTJAdGVzdGUuY29tIiwiaWF0IjoxNjkyNDU0MjgyLCJleHAiOjE2OTI0NTQ3ODJ9.VEtb4bHIoHZz1Q8C2OiUqwra1d1qYUlfxo2s1p3nJho",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/salary_managment/salario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"salary_managment",
+								"salario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE Salario",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJub21lIjoiRmFicmljaW8iLCJzdWIiOiJ0ZXN0ZTJAdGVzdGUuY29tIiwiaWF0IjoxNjkyNDU0MjgyLCJleHAiOjE2OTI0NTQ3ODJ9.VEtb4bHIoHZz1Q8C2OiUqwra1d1qYUlfxo2s1p3nJho",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"idade\": 10,\r\n    \"genero\": \"masculino\",\r\n    \"escolaridade\": \"Ensino medio completo\",\r\n    \"cargo\":\"Analista\",\r\n    \"tempoDeExperienciaEmAnos\": 23,\r\n    \"salario\":5648.85\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/salary_managment/salario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"salary_managment",
+								"salario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar Salario",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJub21lIjoiRmFicmljaW8iLCJzdWIiOiJ0ZXN0ZTJAdGVzdGUuY29tIiwiaWF0IjoxNjkyNDU0MjgyLCJleHAiOjE2OTI0NTQ3ODJ9.VEtb4bHIoHZz1Q8C2OiUqwra1d1qYUlfxo2s1p3nJho",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 1,\r\n        \"idade\": 10,\r\n        \"genero\": \"masculino\",\r\n        \"escolaridade\": \"Ensino medio completo\",\r\n        \"cargo\": \"Analista\",\r\n        \"tempoDeExperienciaEmAnos\": 23.0,\r\n        \"salario\": 15648.85\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/salary_managment/salario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"salary_managment",
+								"salario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Salario",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJub21lIjoiRmFicmljaW8iLCJzdWIiOiJ0ZXN0ZTJAdGVzdGUuY29tIiwiaWF0IjoxNjkyNDU0MjgyLCJleHAiOjE2OTI0NTQ3ODJ9.VEtb4bHIoHZz1Q8C2OiUqwra1d1qYUlfxo2s1p3nJho",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/salary_managment/salario/102",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"salary_managment",
+								"salario",
+								"102"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"teste2@teste.com\",\r\n    \"password\": \"@abc12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/salary_managment/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"salary_managment",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
